@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "https://react-dogs-module.web.app/",
+    publicPath: "https://firebaseTJ.web.app/",
   },
 
   resolve: {
