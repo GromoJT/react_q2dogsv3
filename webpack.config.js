@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "https://firebaseTJ.web.app/",
+    publicPath: "https://fir-tj-88e50.web.app/",
   },
 
   resolve: {
@@ -44,7 +44,9 @@ module.exports = {
       name: "react_q2dogsv3",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./Face":"./src/Face.jsx"
+      },
       shared: {
         ...deps,
         react: {
